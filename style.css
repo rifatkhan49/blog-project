@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(image/5448248.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.clear {
+    overflow: hidden;
+}
+.headersection {
+    color: white;
+}
+.templete{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+    color: #fff;
+    width:960px;
+    margin:0 auto; 
+}
+.navsection {
+    background: linear-gradient(2deg, gray, transparent);
+}
+.navsection ul li:hover {
+    background-color: gold;
+    color: black;
+}
+.maincontent {
+    width: 70%;
+}
+.footersection .footermenu ul li a:hover{
+    color: red;
+}
+.pagination {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.pagination a {
+    background: rgb(162, 148, 148) none repeat scroll 0 0;
+    border: 1px solid darkgoldenrod ;
+    border-radius: 3px;
+    color: white;
+    margin-left: 2px;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+.pagination a:hover {
+    background: dimgray none repeat scroll 0 0;
+    color: white;
+}

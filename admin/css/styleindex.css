@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../image/5448248.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.admin_header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+.admin_nav {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+.nav .ic-dashboard span {
+    padding: 0px 0px 0px 30px;
+    color: aliceblue;
+}
+.ic-dashboard {
+    background: url(../image/icon-dashboard.png ) no-repeat center left;
+}
+.nav .ic-form-style span {
+    padding: 0px 0px 0px 30px;
+    color: aliceblue;
+}
+.ic-form-style {
+    background: url(../image/icon-form-style.png ) no-repeat center left;
+}
+.nav .ic-typography span {
+    padding: 0px 0px 0px 30px;
+    color: aliceblue;
+}
+
+.nav .ic-grid-tables span {
+    padding: 0px 0px 0px 30px;
+    color: aliceblue;
+}
+.ic-grid-tables {
+    background: url(../image/icon-grid-tables.png) no-repeat center left;
+}
+
+.nav .ic-charts span {
+    padding: 0px 0px 0px 30px;
+    color: aliceblue;
+}
+.ic-charts{
+    background: url(../image/icon-charts-graphs.png ) no-repeat center left;
+}
+.admin_header .cat table thead tr th {
+    padding: 10px;
+}
+.admin_header .cat table tr {
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+}
+.admin_header .cat table tr:last-child {
+    line-height: 40px;
+    border-bottom: 0px solid gray;
+}
+.sideber {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    margin-top: 4px;
+}
+  .dropdown-container a:hover {
+    color: white;
+}
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #8d8a8a;
+    
+}
+.dropdown {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) none repeat scroll 0 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.37);
+}
+
+.main {
+    font-size: 20px; 
+    padding: 3px 10px;
+}
+.dropdown-btn i {
+    font-size: 12px;
+}
+.dropdown-btn {
+    margin-top: 5px;
+}
+.dropdown-container {
+    display: none;
+    margin-left: 10px;
+}
+
+.ring {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+  }
+  .ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+  }
+  .ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+  }
+  .ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+  }
+  .ring:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .login {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .login h2 {
+    font-size: 2em;
+    color: #fff;
+  }
+  .login .inputBx {
+    position: relative;
+    width: 100%;
+  }
+  .login .inputBx input {
+    position: relative;
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+  }
+  .login .inputBx input[type="submit"] {
+    width: 100%;
+    background: #0078ff;
+    background: linear-gradient(45deg, #ff357a, #fff172);
+    border: none;
+    cursor: pointer;
+  }
+  .login .inputBx input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .login .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .login .links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  input[type="text"], input[type="email"] {
+    border: 1px solid #cfc5b6;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 300px;
+  }
+  input[type="submit"] {
+    border: 1px solid #e6af4b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 1px 10px;
+  }
+  input[type="file"] {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  input[type="submit"]:hover{background:#FEF4E5;color:#000;}
+  textarea {
+    height: 110px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 300px;
+     border: 1px solid #cfc5b6;
+  }
+  .success {
+    color: green; font-size: 18px;
+  }
+  .error {
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 30px;
+  }
